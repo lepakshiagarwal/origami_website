@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css_web.css">
+	<title> Pug </title>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closesidebar()">&times;</a>
+  <a href="C:\Induvidual project\homepage.html">Home</a>
+  <a href="C:\Induvidual project\cat.html">Cat</a>
+  <a href="C:\Induvidual project\car.html">Car</a>
+  <a href="C:\Induvidual project\dog.html">Dog</a>
+  <a href="C:\Induvidual project\fish.html">Fish</a>
+  <a href="C:\Induvidual project\fox.html">Fox</a>
+  <a href="C:\Induvidual project\heart.html">Heart</a>
+  <a href="C:\Induvidual project\heart bookmark.html">Heart Bookmark</a>
+  <a href="C:\Induvidual project\penguin.html">Peguin</a>
+  <a href="C:\Induvidual project\pug.html">Pug</a>
+  <a href="C:\Induvidual project\rabbit.html">Rabbit</a>
+  <a href="C:\Induvidual project\yatch.html">Yatch</a>	
+ </div>
+ <div class="homebutton">
+ <p>
+	<a href="C:\Induvidual project\homepage.html">
+	<img border="0" alt="Home page" src="C:\Induvidual project\home.png" width="50" height="50">
+ </a>
+ </p>
+ </div>
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="opensidebar()">&#9776; </span>
+  <div class="header">
+    <p> Origami Pug! &nbsp;<small><small><small>Level: Medium </small></small></small> </p>
+  </div>
+ 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 13</div>
+  <img src="C:\Induvidual project\pug\1.jpg" style="width:100%">
+  <div class="text">Follow the instructions below to make this Origami pug.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 13</div>
+  <img src="C:\Induvidual project\pug\2.jpg" style="width:100%">
+  <div class="text">Start with a square piece of origami paper. If you only have regular 8.5x11 paper, follow these instructions to make a square sheet. You can also use these colorful Printable Origami Paper.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 13</div>
+  <img src="C:\Induvidual project\pug\3.jpg" style="width:100%">
+  <div class="text">Fold the paper in half by folding the top corner to the bottom corner.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 13</div>
+  <img src="C:\Induvidual project\pug\4.jpg" style="width:100%">
+  <div class="text">Fold the bottom corner of the top layer up about halfway.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 13</div>
+  <img src="C:\Induvidual project\pug\5.jpg" style="width:100%">
+  <div class="text">Now fold the bottom corner of the back layer backwards so that the other side looks exactly the same as this side.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 13</div>
+  <img src="C:\Induvidual project\pug\6.jpg" style="width:100%">
+  <div class="text">Mentally divide the paper into 3 parts and fold the left 1/3rd over.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 13</div>
+  <img src="C:\Induvidual project\pug\7.jpg" style="width:100%">
+  <div class="text"> Now fold in the right side.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 13</div>
+  <img src="C:\Induvidual project\pug\8.jpg" style="width:100%">
+  <div class="text">Fold out the ears like this.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 13</div>
+  <img src="C:\Induvidual project\pug\9.jpg" style="width:100%">
+  <div class="text"> It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 13</div>
+  <img src="C:\Induvidual project\pug\10.jpg" style="width:100%">
+  <div class="text"> Fold in the top left and right cornsers like this.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 13</div>
+  <img src="C:\Induvidual project\pug\11.jpg" style="width:100%">
+  <div class="text"> It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  <img src="C:\Induvidual project\pug\12.jpg" style="width:100%">
+  <div class="text">  Fold in the bottom cornsers like this.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 13</div>
+  <img src="C:\Induvidual project\pug\13.jpg" style="width:100%">
+  <div class="text"> Turn the paper over and draw its face. You can also fold the ears in if you don't like pointy ears.</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ </div>
+ <script>
+  function opensidebar() {
+   document.getElementById("mySidebar").style.width = "250px";
+   document.getElementById("main").style.marginLeft = "250px";
+   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closesidebar() {
+   document.getElementById("mySidebar").style.width = "0";
+   document.getElementById("main").style.marginLeft= "0";
+   document.body.style.backgroundColor = "white";
+  }
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+ </script>
+</body>
+</html>

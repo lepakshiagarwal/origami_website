@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css_web.css">
+	<title> Fox </title>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closesidebar()">&times;</a>
+  <a href="C:\Induvidual project\homepage.html">Home</a>
+  <a href="C:\Induvidual project\cat.html">Cat</a>
+  <a href="C:\Induvidual project\car.html">Car</a>
+  <a href="C:\Induvidual project\dog.html">Dog</a>
+  <a href="C:\Induvidual project\fish.html">Fish</a>
+  <a href="C:\Induvidual project\fox.html">Fox</a>
+  <a href="C:\Induvidual project\heart.html">Heart</a>
+  <a href="C:\Induvidual project\heart bookmark.html">Heart Bookmark</a>
+  <a href="C:\Induvidual project\penguin.html">Peguin</a>
+  <a href="C:\Induvidual project\pug.html">Pug</a>
+  <a href="C:\Induvidual project\rabbit.html">Rabbit</a>
+  <a href="C:\Induvidual project\yatch.html">Yatch</a>	
+ </div>
+ <div class="homebutton">
+ <p>
+	<a href="C:\Induvidual project\homepage.html">
+	<img border="0" alt="Home page" src="C:\Induvidual project\home.png" width="50" height="50">
+ </a>
+ </p>
+ </div>
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="opensidebar()">&#9776; </span>
+  <div class="header">
+    <p> Origami Fox! &nbsp;<small><small><small>Level: Easy </small></small></small> </p>
+  </div>
+ 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="C:\Induvidual project\fox\1.jpg" style="width:100%">
+  <div class="text">Follow the steps to make this Very Easy Origami Fox.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="C:\Induvidual project\fox\2.jpg" style="width:100%">
+  <div class="text">Start with a square piece of origami paper. If you only have regular 8.5x11 paper, follow these instructions to make a square sheet. You can also use these colorful Printable Origami Paper.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="C:\Induvidual project\fox\3.jpg" style="width:100%">
+  <div class="text"> It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="C:\Induvidual project\fox\4.jpg" style="width:100%">
+  <div class="text">Let's make a line in the center. Fold in half again by folding left corner to right corner, then unfold.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="C:\Induvidual project\fox\5.jpg" style="width:100%">
+  <div class="text">It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="C:\Induvidual project\fox\6.jpg" style="width:100%">
+  <div class="text">Fold the left and right triangle edges toward the center, but not all the way to the center.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="C:\Induvidual project\fox\7.jpg" style="width:100%">
+  <div class="text">It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="C:\Induvidual project\fox\8.jpg" style="width:100%">
+  <div class="text"> Turn the figure over and draw on the face.</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ </div>
+ <script>
+  function opensidebar() {
+   document.getElementById("mySidebar").style.width = "250px";
+   document.getElementById("main").style.marginLeft = "250px";
+   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closesidebar() {
+   document.getElementById("mySidebar").style.width = "0";
+   document.getElementById("main").style.marginLeft= "0";
+   document.body.style.backgroundColor = "white";
+  }
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+ </script>
+</body>
+</html>

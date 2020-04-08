@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css_web.css">
+	<title> Car </title>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closesidebar()">&times;</a>
+  <a href="C:\Induvidual project\homepage.html">Home</a>
+  <a href="C:\Induvidual project\cat.html">Cat</a>
+  <a href="C:\Induvidual project\car.html">Car</a>
+  <a href="C:\Induvidual project\dog.html">Dog</a>
+  <a href="C:\Induvidual project\fish.html">Fish</a>
+  <a href="C:\Induvidual project\fox.html">Fox</a>
+  <a href="C:\Induvidual project\heart.html">Heart</a>
+  <a href="C:\Induvidual project\heart bookmark.html">Heart Bookmark</a>
+  <a href="C:\Induvidual project\penguin.html">Peguin</a>
+  <a href="C:\Induvidual project\pug.html">Pug</a>
+  <a href="C:\Induvidual project\rabbit.html">Rabbit</a>
+  <a href="C:\Induvidual project\yatch.html">Yatch</a>	
+ </div>
+ <div class="homebutton">
+ <p>
+	<a href="C:\Induvidual project\homepage.html">
+	<img border="0" alt="Home page" src="C:\Induvidual project\home.png" width="50" height="50">
+ </a>
+ </p>
+ </div>
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="opensidebar()">&#9776; </span>
+  <div class="header">
+    <p> Origami Car! &nbsp;<small><small><small>Level: Easy </small></small></small> </p>
+  </div>
+ 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 12</div>
+  <img src="C:\Induvidual project\car\1.jpg" style="width:100%">
+  <div class="text">Learn how to make an origami car with instructions below.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 12</div>
+  <img src="C:\Induvidual project\car\2.jpg" style="width:100%">
+  <div class="text">Start with a square sheet of origami paper, color side down. If you only have regular rectangle paper, follow instructions on how to make origami paper.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 12</div>
+  <img src="C:\Induvidual project\car\3.jpg" style="width:100%">
+  <div class="text">Fold the paper in half, top to bottom, then unfold.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 12</div>
+  <img src="C:\Induvidual project\car\4.jpg" style="width:100%">
+  <div class="text">It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 12</div>
+  <img src="C:\Induvidual project\car\5.jpg" style="width:100%">
+  <div class="text">Now fold the paper in half again, left to right, and unfold again.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 12</div>
+  <img src="C:\Induvidual project\car\6.jpg" style="width:100%">
+  <div class="text">It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 12</div>
+  <img src="C:\Induvidual project\car\7.jpg" style="width:100%">
+  <div class="text">Fold the bottom edge to the center crease.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 12</div>
+  <img src="C:\Induvidual project\car\8.jpg" style="width:100%">
+  <div class="text"> Diagonally fold down the left and right side of the bottom flap. This forms the wheels.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 12</div>
+  <img src="C:\Induvidual project\car\9.jpg" style="width:100%">
+  <div class="text">  Fold down the top part at the horizontal crease, covering the wheels entirely.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 12</div>
+  <img src="C:\Induvidual project\car\10.jpg" style="width:100%">
+  <div class="text">  It should look like this after the previous step.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 12</div>
+  <img src="C:\Induvidual project\car\11.jpg" style="width:100%">
+  <div class="text"> Now fold about 3/4 of it back up.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 12</div>
+  <img src="C:\Induvidual project\car\12.jpg" style="width:100%">
+  <div class="text"> Fold down the top right corner like the picture.Turn the figure over and now you know how to make an origami car! Just draw on the windows and doors and you can design your own dream car!</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ </div>
+ <script>
+  function opensidebar() {
+   document.getElementById("mySidebar").style.width = "250px";
+   document.getElementById("main").style.marginLeft = "250px";
+   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closesidebar() {
+   document.getElementById("mySidebar").style.width = "0";
+   document.getElementById("main").style.marginLeft= "0";
+   document.body.style.backgroundColor = "white";
+  }
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+ </script>
+</body>
+</html>
